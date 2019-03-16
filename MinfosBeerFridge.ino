@@ -223,7 +223,7 @@ void uploadTemperatures()
 	p.addParameter("Content-Type: application/json");
 
 	p.addParameter("-H");
-	p.addParameter("x-api-key: zCHviXD15Z28vfdc3T06o25Rh16XrUSb9JE6bnYi");
+	p.addParameter("x-api-key: <TODO: REDACTED>");
 
 	p.addParameter("--data");
 	p.addParameter(getData());
