@@ -1,12 +1,13 @@
 #include <SPI.h>
 #include <Ethernet.h>
 #include <HttpClient.h>
-#include <OneWire.h>
-#include <DallasTemperature.h>
 #include <Wire.h>
-#include <LiquidCrystal_I2C.h>
 #include <Console.h>
-#include <ArduinoJson.h>
+
+#include "src/OneWire/OneWire.h"
+#include "src/DallasTemperature/DallasTemperature.h"
+#include "src/NewliquidCrystal/LiquidCrystal_I2C.h"
+#include "src/ArduinoJson/ArduinoJson.h"
 
 const byte sensorPin = 2;
 const byte backlightPin = 13;
