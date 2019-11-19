@@ -1,6 +1,6 @@
 {
     "board": "arduino:avr:mega",
     "configuration": "cpu=atmega2560",
-    "sketch": "MinfosBeerFridge.ino",
+    "sketch": "minfos-beer-fridge-client.ino",
     "output": "./ArduinoOutput"
 }
