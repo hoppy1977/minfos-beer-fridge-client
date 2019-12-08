@@ -1,6 +1,21 @@
 # minfos-beer-fridge-client
 Arduino code that runs on the MBF fridge box.
 
+## Introduction
+The MBF system is intended to be zero maintenance. From time-to-time, however you may need to make a code change. The most likely reason for this is if you re-deploy the [MBF serverless stack](https://github.com/hoppy1977/minfos-beer-fridge), which would cause a new API endpoint to be generated.
+
+## Setting up the hardware
+
+## Setting up Visual Code
+
+## Configuring the Arduino IDE
+
+## Uploading Code
+
+## Debugging
+
+
+
 Requirments:
 * Visual Code
 * Visual Studio Code extension for Arduino
