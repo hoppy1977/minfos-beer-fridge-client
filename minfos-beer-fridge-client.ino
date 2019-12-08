@@ -37,9 +37,9 @@ LiquidCrystal_I2C lcd(0x3F, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  // Set the LCD I
 
 // ===============
 // AWS Settings
-//char awsAddress[] = "mbf.azurewebsites.net";
-//const int awsPort = 80;
-//const String awsApiKey = "DXkE/XXWAJxFA2Bzf/YacOYz4udZAjYfyJgSAxPOSrHqdMii037q6w==";
+String baseUrl = "https://xyxa9i2g7i.execute-api.ap-southeast-2.amazonaws.com/";
+String stageName = "dev";
+String apiKey = "<TODO: REDACTED>";
 
 void setup()
 {
@@ -224,12 +224,12 @@ void uploadTemperatures()
 	p.addParameter("Content-Type: application/json");
 
 	p.addParameter("-H");
-	p.addParameter("x-api-key: <TODO: REDACTED>");
+	p.addParameter("x-api-key: " + apiKey);
 
 	p.addParameter("--data");
 	p.addParameter(getData());
 
-	p.addParameter("https://i8ai84tyo4.execute-api.ap-southeast-2.amazonaws.com/v1/temperature");
+	p.addParameter(baseUrl + stageName + "/temperature");
 	p.run();
 
 	lcd.setCursor(0, 3);
