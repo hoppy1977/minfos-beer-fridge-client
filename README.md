@@ -14,11 +14,23 @@ WiFi has been disabled on the Yun shield, so you will not be able to deploy your
 
 ## Configuring the Arduino IDE
 
-1. Set the board type.<br>
-TODO:
+1. First we need to tell the IDE about the board/shield combo that we want to work upload the code to.<br>
+The IDE knows how to work with all the standard Arduino boards, but because the Arduino Mega2560/Yun shield combo is a little unusual we need to configure the IDE to handle it.<br>
+    1. Make sure the Arduino IDE is shut down.
+    2. Open the following file `C:\Program Files (x86)\Arduino\hardware\arduino\avr\boards.txt`.
+    3. Paste the contents of the `ArduinoBoardsUpdate.txt` file to the end of `boards.txt`.
+    4. Save the file.
+    5. Restart the Arduino IDE.
 
-2. Set the port<br>
-TODO:
+2. Set the board type.<br>
+If you completed the previous step correctly, you should now have a new board type available for use:<br>
+<img src="./Resources/board_selection.png" width="475"/>
+
+3. Set the port.<br>
+TODO:<br>
+<img src="./Resources/port_selection.png" width="535"/>
+
+
 
 ---
 Note:
